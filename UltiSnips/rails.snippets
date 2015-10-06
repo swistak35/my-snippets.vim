@@ -1,0 +1,66 @@
+priority -50
+
+snippet cla "Create controller class"
+class ${1:ControllerName} < ApplicationController
+	$0
+end
+endsnippet
+
+snippet tcda "Create date column"
+t.date :${1:title}
+$0
+endsnippet
+
+snippet tcdt "Create datetime column"
+t.datetime :${1:title}
+$0
+endsnippet
+
+snippet tcd "Create decimal column"
+t.decimal :${1:title}${2:${3:, :precision => ${4:10}}${5:, :scale => ${6:2}}}
+$0
+endsnippet
+
+snippet tcf "Create float column"
+t.float :${1:title}
+$0
+endsnippet
+
+snippet tcb "Create boolean column"
+t.boolean :${1:title}
+$0
+endsnippet
+
+snippet tci "Create integer column"
+t.integer :${1:title}
+$0
+endsnippet
+
+snippet tcs "Create string column"
+t.string :${1:title}
+$0
+endsnippet
+
+snippet tct "Create text column"
+t.text :${1:title}
+$0
+endsnippet
+
+snippet tcti "Create time column"
+t.time :${1:title}
+$0
+endsnippet
+
+snippet rj "render (json) (rj)"
+render json: ${1:result}
+endsnippet
+
+snippet rjs "render (json) (rjs)"
+render json: ${1:result}, status: ${2:code}
+endsnippet
+
+snippet desc "describe do ... end"
+describe do
+$0
+end
+endsnippet
